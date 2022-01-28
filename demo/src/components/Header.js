@@ -6,11 +6,11 @@ const HeaderSection = styled.header`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 `
 
 const LogoSection = styled.div`
-  width: 75%;
+  width: 85%;
   margin: 1em 0;
   img {
     width: 200px;
