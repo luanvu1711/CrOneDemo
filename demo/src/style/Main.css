@@ -1,0 +1,233 @@
+/* Main Section */
+.main__section {
+  width: 100%;
+  background-color: #f7f7f7;
+  height: 78vh;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  position: relative;
+}
+
+/* Main Content */
+.main__content {
+  width: 100%;
+}
+
+/* Main Text */
+.main__text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  top: 15%;
+  left: 15%;
+  color: #076191;
+  width: 50%;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial,
+    sans-serif;
+}
+
+.main__text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  max-width: 70%;
+}
+
+.main__text h3 {
+  max-width: 80%;
+  font-size: 2rem;
+}
+
+.main__text p {
+  margin: 0.5em 0 0 2.5em;
+}
+
+.main__text p:nth-child(5) {
+  margin-top: 1.5em;
+}
+
+.main__text p:nth-child(6) {
+  color: #9b9b9b;
+  margin: 5rem 0 0 0;
+  font-size: 1.1rem;
+}
+
+/* Main Rate */
+.main__rate {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 1.5em 0;
+}
+
+.main__rate h1 {
+  font-size: 4rem;
+}
+
+.main__rate p:nth-child(2) {
+  border-right: 1px solid #076191;
+  padding-right: 1em;
+  line-height: 1.4;
+}
+
+.main__rate p:nth-child(3) {
+  max-width: 25%;
+  line-height: 1.4;
+  /* padding-top: 1em; */
+}
+
+/* Main Button */
+
+.main__button {
+  margin-top: 2em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 1;
+}
+
+.main__button button {
+  border: none;
+  box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(255, 144, 0);
+  cursor: pointer;
+  padding: 14px 32px;
+  border-radius: 5px;
+  margin-right: 2em;
+}
+
+.main__button a {
+  border: none;
+  box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+  color: #000000;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #dedede;
+  cursor: pointer;
+  padding: 14px 32px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.main__image {
+  width: 70%;
+  object-fit: cover;
+  mask-image: linear-gradient(270deg, #fff, transparent);
+}
+@media (max-width: 1440px) {
+  .main__text {
+    width: 65%;
+    top: 10%;
+    height: 100vh;
+  }
+
+  .main__text h1 {
+    font-size: 3rem;
+  }
+
+  .main__text h3 {
+    font-size: 1.5rem;
+  }
+
+  .main__text p:nth-child(6) {
+    margin: 1rem 0 0 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .main__section {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .main__text {
+    padding: 0 2em;
+    width: 100%;
+    top: 45%;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__text h1 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  .main__text h3 {
+    max-width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .main__text p {
+    margin: 0;
+  }
+
+  .main__text p:nth-child(5) {
+    margin-top: 1.5em;
+  }
+
+  .main__text p:nth-child(6) {
+    margin: 1.5rem 0 0 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .main__rate {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em 0;
+  }
+  .main__rate h1 {
+    font-size: 3.5rem;
+  }
+  .main__rate p:nth-child(2) {
+    border-right: none;
+    border-bottom: 1px solid #076191;
+    padding-right: 0;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+
+  .main__rate p:nth-child(3) {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .main__button {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__button button {
+    margin-right: 0;
+    margin-bottom: 1em;
+    box-shadow: none;
+    border: 1px solid #b26500;
+  }
+
+  .main__button a {
+    box-shadow: none;
+    border: 1px solid #8c8c8c;
+  }
+
+  .main__image {
+    width: 100%;
+    mask-image: linear-gradient(180deg, #fff, transparent);
+  }
+}
+
+@media (max-width: 500px) {
+  .main__text {
+    top: 25%;
+    padding: 0 1em;
+  }
+}

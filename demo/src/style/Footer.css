@@ -1,0 +1,35 @@
+.footer__section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 2em 0;
+  font-size: 1.2rem;
+}
+
+.text__section {
+  width: 85%;
+}
+
+@media (max-width: 800px) {
+  .footer__section {
+    position: absolute;
+    bottom: -25em;
+    padding: 1em;
+  }
+
+  .text__section {
+    display: flex;
+    justify-content: center;
+    aling-items: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer__section {
+    bottom: -21em;
+  }
+}

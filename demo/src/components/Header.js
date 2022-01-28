@@ -1,37 +1,22 @@
-import React from 'react';
-import styled from 'styled-components';
-import logo from '../assets/logo.svg';
+import React, { useState, useRef } from "react";
+import styled from "styled-components";
+import logo from "../assets/logo.svg";
+import logoWhite from "../assets/logo_white.svg";
+import "../style/Header.css";
 
-const HeaderSection = styled.header`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  background-color: #fff;
-`
-
-const LogoSection = styled.div`
-  width: 85%;
-  margin: 1.5em 0;
-  img {
-    width: 200px;
-  }
-
-  @media (max-width: 800px) {
-    display: flex;
-    justify-content: center;
-    aling-items: center;
-    width: 100%;
-  }
-`
-function Header() {
+function Header({ accepted, show, width, height }) {
   return (
-    <HeaderSection>
-      <LogoSection>
-        <img className="image" src={logo}/>    
-      </LogoSection>
-    </HeaderSection>
-  )
+    <div
+      className="header__section"
+      style={
+        accepted ? { backgroundColor: "#076191" } : { backgroundColor: "#fff" }
+      }
+    >
+      <div className="logo__section">
+        <img className="image" src={accepted ? logoWhite : logo} />
+      </div>
+    </div>
+  );
 }
 
 export default Header;
