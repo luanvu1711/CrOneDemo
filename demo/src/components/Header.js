@@ -7,13 +7,21 @@ const HeaderSection = styled.header`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  background-color: #fff;
 `
 
 const LogoSection = styled.div`
   width: 85%;
-  margin: 1em 0;
+  margin: 1.5em 0;
   img {
     width: 200px;
+  }
+
+  @media (max-width: 800px) {
+    display: flex;
+    justify-content: center;
+    aling-items: center;
+    width: 100%;
   }
 `
 function Header() {
