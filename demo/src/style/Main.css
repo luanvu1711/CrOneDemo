@@ -172,6 +172,7 @@
 
   .main__text p:nth-child(5) {
     margin-top: 1.5em;
+    
   }
 
   .main__text p:nth-child(6) {
@@ -197,6 +198,7 @@
   }
 
   .main__rate p:nth-child(3) {
+    margin-top: 1em;
     max-width: 100%;
     text-align: center;
   }

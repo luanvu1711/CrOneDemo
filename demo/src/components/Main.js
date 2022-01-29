@@ -5,7 +5,7 @@ import image from "../assets/pexels-andrea-piacquadio-920382 (1).jpg";
 
 function Main({ handleClick }) {
   return (
-    <section class="main__section">
+    <section className="main__section">
       <div className="main__content">
         <div className="main__text">
           <h1>Consolidate Your Debt With A Lower&nbsp;Rate</h1>
