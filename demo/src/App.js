@@ -23,13 +23,13 @@ function App() {
 
   return (
     <div className="App" ref={confettiRef}>
-      {/* Removed line #27 - #32 to remove confetti */}
-      <Confetti
+      {/* Comment out line #27 - #32 to add confetti */}
+      {/* <Confetti
         recycle={show}
         numberOfPieces={180}
         width={width}
         height={height}
-      ></Confetti>
+      ></Confetti> */}
       <Header accepted={accepted} show={show} width={width} height={height} />
       <Main handleClick={handleClick} />
       <Footer />
